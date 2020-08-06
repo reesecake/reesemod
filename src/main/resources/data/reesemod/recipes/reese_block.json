@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+          [
+            "xxx",
+            "xxx",
+            "xxx"
+          ],
+  "key":
+  {
+    "x":
+    {
+      "item": "reesemod:reese_item"
+    }
+  },
+  "result":
+  {
+    "item": "reesemod:reese_block",
+    "count": 1
+  }
+}

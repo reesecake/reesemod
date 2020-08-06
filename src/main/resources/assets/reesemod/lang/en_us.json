@@ -1,0 +1,13 @@
+{
+  "item.reesemod.reese_item": "Reese item",
+  "block.reesemod.reese_ore": "Reese Ore",
+  "block.reesemod.reese_block": "Block of Reese",
+  "item.reesemod.reese_sword": "Reese Sword",
+  "item.reesemod.reese_pickaxe": "Reese Pickaxe",
+  "item.reesemod.reese_helmet": "Reese Helmet",
+  "item.reesemod.reese_chestplate": "Reese Chestplate",
+  "item.reesemod.reese_leggings": "Reese Leggings",
+  "item.reesemod.reese_boots": "Reese Boots",
+  "item.reesemod.protein_shake": "Protein Shake",
+  "itemGroup.reesemodTab": "Reesemod"
+}
