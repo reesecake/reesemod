@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": [
+      {
+        "item": "reesemod:reese_item"
+      }
+    ]
+  },
+  "result": {
+    "item": "reesemod:reese_torch",
+    "count": 16
+  }
+}
