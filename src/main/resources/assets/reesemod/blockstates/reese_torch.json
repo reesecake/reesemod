@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "block/reese_torch" }
+        "": { "model": "reesemod:block/reese_torch"}
     }
 }

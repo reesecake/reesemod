@@ -11,11 +11,11 @@ issueTrackerURL="https://github.com/reesecake" #optional
 
 modId="reesemod" #mandatory
 
-version="1.16.1-1.0.0" #mandatory
+version="1.16.2-1.0.1" #mandatory
 
 displayName="Reese Mod" #mandatory
 
-updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="https://github.com/reesecake" #optional
 
 displayURL="https://github.com/reesecake" #optional
 
@@ -23,7 +23,7 @@ logoFile="reesemod_logo.png" #optional
 
 credits="Thanks for Reese" #optional
 
-authors="Reese" #optional
+authors="Reesecake" #optional
 
 description='''
 epic reese mod
