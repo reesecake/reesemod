@@ -10,11 +10,24 @@ import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
 
 public class ReeseBlock extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+
+    // fill in with VoxelShape data for each direction
+    // used for blocks that are not full blocks
+    /*
+    private static final VoxelShape SHAPE_N = ;
+    private static final VoxelShape SHAPE_E = ;
+    private static final VoxelShape SHAPE_S = ;
+    private static final VoxelShape SHAPE_W = ;
+     */
 
     public ReeseBlock() {
         super(Block.Properties.create(Material.IRON)
@@ -25,6 +38,25 @@ public class ReeseBlock extends Block {
                 .setRequiresTool()
         );
     }
+
+    // Override to determine voxel shape direction
+    /*
+    @Override
+    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+        switch (state.get(FACING)) {
+            case NORTH:
+                return SHAPE_N;
+            case EAST:
+                return SHAPE_E;
+            case SOUTH:
+                return SHAPE_S;
+            case WEST:
+                return SHAPE_W;
+            default:
+                return SHAPE_N;
+        }
+    }
+    */
 
     // Method overrides to do directional placement
 
@@ -47,4 +79,12 @@ public class ReeseBlock extends Block {
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
+
+    // Adds a shadow to a custom voxel shape
+    /*
+    @Override
+    public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        return 0.6f;
+    }
+    */
 }
