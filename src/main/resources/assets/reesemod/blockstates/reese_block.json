@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "reesemod:block/reese_block" }
+    "facing=north": { "model": "reesemod:block/reese_block" },
+    "facing=south": { "model": "reesemod:block/reese_block", "y": 180 },
+    "facing=west": { "model": "reesemod:block/reese_block", "y": 270 },
+    "facing=east": { "model": "reesemod:block/reese_block", "y": 90 }
   }
 }
