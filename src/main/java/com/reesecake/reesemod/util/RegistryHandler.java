@@ -5,11 +5,13 @@ import com.reesecake.reesemod.armor.ModArmorMaterial;
 import com.reesecake.reesemod.blocks.BlockItemBase;
 import com.reesecake.reesemod.blocks.ReeseBlock;
 import com.reesecake.reesemod.blocks.ReeseOre;
+import com.reesecake.reesemod.blocks.ReeseTorch;
 import com.reesecake.reesemod.items.ItemBase;
 import com.reesecake.reesemod.items.ProteinShake;
 import com.reesecake.reesemod.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
+import net.minecraft.block.TorchBlock;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -54,8 +56,10 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> REESE_BLOCK = BLOCKS.register("reese_block", ReeseBlock::new);
     public static final RegistryObject<OreBlock> REESE_ORE = BLOCKS.register("reese_ore", ReeseOre::new);
+    public static final RegistryObject<Block> REESE_TORCH = BLOCKS.register("reese_torch", ReeseTorch::new);
 
     // Block Items
     public static final RegistryObject<Item> REESE_BLOCK_ITEM = ITEMS.register("reese_block", () -> new BlockItemBase(REESE_BLOCK.get()));
     public static final RegistryObject<Item> REESE_ORE_ITEM = ITEMS.register("reese_ore", () -> new BlockItemBase(REESE_ORE.get()));
+    public static final RegistryObject<Item> REESE_TORCH_ITEM = ITEMS.register("reese_torch", () -> new BlockItemBase(REESE_TORCH.get()));
 }
